@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    transition: .2s ease;
+}
+.header{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: maroon;
+
+}
+#error{
+    visibility: hidden;
+    color: red;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.border11{
+    border: 5px solid red;
+}
+.borderCorrect{
+    border: 3px inset green;
+}
+table{
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+td{
+    padding: 10px;
+}
+.label{
+    color: maroon !important;
+    font-size: 25px;
+}
+.labelTd{
+    width: 40%;
+}
+.inputTd{
+    width: 60%;
+}
+input,select{
+    height: 50px;
+}
+input,textarea, select{
+    width: 100% !important;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid maroon;
+    color: maroon !important;
+    text-transform: uppercase;
+}
+input:hover, textarea:hover, select:hover{
+    outline: 1px solid maroon;
+}
+textarea{
+    height: 100px;
+}
+option{
+    color: maroon !important;
+    text-align: center;
+    padding: 5px;
+}
+#logoImg{
+    position: fixed;
+    top: 45%;
+    left: 5%;
+    width: 500px;
+    transform: rotate(-90deg);
+    transition: 1s ease;
+}
+#logoImg:hover{
+    transform: rotate(0) translateY(-200px);
+    transition: 2s ease;
+    box-shadow: 1px 5px 10px yellow;
+}
+@keyframes borderMove{
+    from{
+        outline: 1px solid maroon;
+    }
+    to{
+        outline: 1px solid #fff;
+    }
+}
+.borderAnimation{
+    animation-name: borderMove;
+    animation-direction: alternate;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+}
