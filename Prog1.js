@@ -1,13 +1,13 @@
 
-    function formValidate(){
-        firstName = document.forms['form1']['firstName'].value;
-        lastName = document.forms['form1']['lastName'].value;
-        dob = document.forms['form1']['dob'].value;
-        mobileNo = document.forms['form1']['mobileNo'].value;
-        address = document.forms['form1']['address'].value;
-        branch = document.forms['form1']['branch'].value;
-        collegeName = document.forms['form1']['collegeName'].value;
-        gender = document.forms['form1']['gender'].value;
+function formValidate(){
+        firstName = document.getElementById("firstName").value;
+        lastName = document.getElementById("lastName").value;
+        dob = document.getElementById("dob").value;
+        mobileNo = document.getElementById("mobileNo").value;
+        address = document.getElementById("address").value;
+        branch = document.getElementById("branch").value;
+        collegeName = document.getElementById("collegeName").value;
+        gender = document.getElementById("gender").value;
         
         if(firstName == ""){
             document.getElementById("firstName").classList.add('border11');
@@ -22,7 +22,10 @@
             document.getElementById("mobileNo").classList.add('border11');
             return false;
         }
-
+        if(mobileNo.toString().length < 10 || mobileNo.toString().length > 10){
+            alert("Enter valid Mobile");
+            
+        }
         if(dob =="" ){
             document.getElementById("dob").classList.add('border11');
             return false;       
@@ -46,10 +49,9 @@
             document.getElementById("branch").classList.add('border11');
             return false;
         }
-        if(mobileNo.length < 10 || mobileNo.length > 10){
-            alert("Mobile No");
-        }
-    }
+}
+
+
 
 $(document).ready(function(){
     $("input, select, textarea").focus(function(){
@@ -60,5 +62,5 @@ $(document).ready(function(){
         this.style.outline = "none";
         this.classList.remove('borderAnimation');
     });
-
+    
 });
