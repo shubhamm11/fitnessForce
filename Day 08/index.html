@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">        
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header id="top">
+            <h1>Hotel ANONYMOUS</h1>
+        </header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contactUs">Contact us</a>
+        </nav>
+        <section>
+            <div class="subSection home" id="home">
+                <!-- <h3 class="subtitle">Home</h3> -->
+                <img src="images/slider-back-hotel.jpg" alt="Hotel ANONYMOUS">
+                <p class="hotelDetails">
+                    Our design hotel The Mira Hong Kong in the heart of Hong Kong’s popular Tsim Sha Tsui has been crafted to ignite your senses. We invite you to enjoy a luxury hotel stay where not a single detail has been missed, from our sleek, comfortable rooms, to the exquisite dishes served in our Michelin-recommended restaurants, to our state-of-the-art facilities.
+                    Each room is well appointed with Aveda bath products, Frett linens, and bathrobes. All rooms include full mini-bar, iPod/MP3 Players & Alarm Clock, on-demand movies, multiple phone lines, complimentary high-speed wireless internet access, and in-room safes. At turndown each night, guests may avail themselves of the overnight shoe shine, delivered freshly shined in the mornin.
+                </p>
+            </div>
+            <section id="section2">
+                <article class="subart">
+                    <h3 class="subtitle">Book</h3>
+                    <form>
+                        <p>
+                            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                        </p>
+                        <p>
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                        </p>
+                        <p>
+                            <input type="tel" name="mobileNo" id="mobileNo" placeholder="Mobile No">
+                        </p>
+                        <p>
+                            <input type="email" name="emailId" id="emailId" placeholder="Email Id">
+                        </p>
+                        <p class="dateP">
+                            <span>
+                                    <label>Start Date : </label>
+                                    <input type="datetime-local" name="startDate" id="startDate" >
+                            </span>
+                            <span>
+                                    <label>End Date : </label>
+                                    <input type="datetime-local" name="endDate" id="endDate">
+                            </span>
+                        </p>
+                        <p>
+                            <button name="bookRoom" class="btn btn-primary">Book</button>
+                        </p>
+                    </form>    
+                </article>
+                <aside class="subart">
+                    <h3 class="subtitle">Aside menu</h3>
+                </aside>
+            </section>
+            <div class="subSection gallery" id="gallery">
+                <h3 class="subtitle">Gallery</h3>
+                <div class="images">
+                    <img src="images/download.jpg" alt="hotel">
+                    <img src="images/pexels-photo-260922.webp" alt="Hotel ANONYMOUS">
+                    <img src="images/pexels-photo-262047.jpg" alt="Hotel ANONYMOUS">
+                    <img src="images/pexels-photo-573552.webp" alt="Hotel ANONYMOUS">
+                    <img src="images/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpg" alt="Hotel ANONYMOUS">
+                    <img src="images/travel-1737168__340.jpg" alt="Hotel ANONYMOUS">
+                    <img src="images/slider-back-hotel.jpg" alt="Hotel ANONYMOUS">
+                    <img src="images/download.jpg" alt="hotel">
+                    <img src="images/pexels-photo-260922.webp" alt="Hotel ANONYMOUS">
+                    <img src="images/pexels-photo-262047.jpg" alt="Hotel ANONYMOUS">
+                    <img src="images/pexels-photo-573552.webp" alt="Hotel ANONYMOUS">
+                    <img src="images/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpg" alt="Hotel ANONYMOUS">
+                    <img src="images/travel-1737168__340.jpg" alt="Hotel ANONYMOUS">
+                    <img src="images/slider-back-hotel.jpg" alt="Hotel ANONYMOUS">
+                    <img src="images/download.jpg" alt="hotel">
+                    <img src="images/pexels-photo-260922.webp" alt="Hotel ANONYMOUS">
+                    <img src="images/pexels-photo-262047.jpg" alt="Hotel ANONYMOUS">
+                    <img src="images/pexels-photo-573552.webp" alt="Hotel ANONYMOUS">
+                </div>                
+            </div>
+            
+            <div class="subSection contactUs" id="contactUs">
+                <h3 class="subtitle">Contact Us</h3>
+                <div class="contactDiv">
+                    <div class="addressDiv">
+                        <p>
+                            <label>Address</label><span> : </span><span>902A Sumer Plaza, Marol Maroshi Rd, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059</span>
+                        </p>
+                        <p>
+                            <label>Contact no</label><span> : </span><span><a href="tel:9594869792">9594869792</a></span>
+                        </p>
+                        <p>
+                            <label>Email Id</label><span> : </span><span><a href="mailto:shubhamm@fitnessforce.com">shubhamm@fitnessforce.com</a></span>
+                        </p>
+                        <p class="imgP">
+                            <img src="images/logo.png" alt="Hotel Anonymous Logo">
+                        </p>
+                    </div>
+                    <div class="contactForm">
+                        <form action="#" method="POST">
+                            <p>
+                                <label>Feel Free to ask...</label>
+                            </p>
+                            <p>
+                                <input type="text" name="name" id='name' placeholder='Name' required>
+                            </p>
+                            <p>
+                                <input type="email" name="email" id='email' placeholder='Email Id' required>
+                            </p>
+                            <p>
+                                <textarea name="query" id="query" placeholder='Query' required></textarea>
+                            </p>
+                            <p>
+                                <button class='btn btn-warning' name="submitQuery" id="submitQuery">Submit</button>
+                            </p>
+                        </form>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <a href="#top" class="btn btn-danger" id="topButton">Top</a> 
+        <footer>
+            <details>
+                <summary>@ COPYRIGHTS 2018-19</summary>
+                <P>
+                    All rights reserved by ANONYMOUS
+                </P>
+            </details>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
