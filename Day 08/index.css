@@ -86,7 +86,7 @@ section div{
    height: 250px;
    transition: .4s ease-out;
    outline: 5px solid maroon;
-    box-shadow: 1px 1px 10px 10px grey;
+    box-shadow: 1px 1px 15px 10px grey;
 }
 #section2{
     display: grid;
@@ -110,12 +110,44 @@ article p input{
     outline: none;
     border-bottom: 2px solid maroon;
 }
-article p input[type='datetime-local']{
+article p input[type='datetime-local'], article p select{
     width: 30%;
 }
 article p input:hover{
     outline: 2px solid maroon;
     background: none;
+}
+aside{
+    text-align: center;
+}
+aside .menu{
+    border: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+aside div{
+    border: none;
+}
+.menuItems img{
+    /* box-shadow: 5px 5px 30px 10px gray; */
+    animation: shadowBlink 2s linear infinite alternate-reverse;
+}
+.menuItems img:hover ~ p{
+    text-decoration: underline;
+}
+@keyframes shadowBlink{
+    0%{
+        box-shadow: 0px 0px 0px 0px gray;
+    }
+    100%{
+        box-shadow: 5px 5px 30px 10px gray;
+    }
+}
+.menuItems p {
+    padding: 10px;
+    font-weight: bolder;
 }
 .contactUs{
     width: 100%;
