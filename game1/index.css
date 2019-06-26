@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 500px;
+    border: 1px solid maroon;
+}
+.red, .blue{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+@keyframes moveRed{
+    0%{top: 10px;left: 50px;}
+    10%{top: 20px;left: 400px;}
+    20%{top: 30px;left: 200px;}
+    30%{top: 440px;left: 50px;}
+    40%{top: 10px;left: 250px;}
+    50%{top: 160px;left: 550px;}
+    60%{top: 80px;left: 50px;}
+    70%{top: 10px;left: 510px;}
+    80%{top: 250px;left: 150px;}
+    90%{top: 100px;left: 20px;}
+    100%{top: 60px;left: 100px;}
+}
+.red{
+    position: relative;
+    background-color: red;
+    animation: moveRed 20s linear infinite alternate-reverse;
+    /* transition: 8s; */
+}
+.blue{
+    background-color: blue;
+}

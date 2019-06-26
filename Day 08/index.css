@@ -3,6 +3,9 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 a{
     color: inherit;
 }
@@ -103,7 +106,7 @@ article{
 article p{
     padding: 10px; 
 }
-article p input{
+article p input, article p select{
     width: 90%;
     height: 50px;
     border: none;
@@ -136,6 +139,20 @@ aside div{
 }
 .menuItems img:hover ~ p{
     text-decoration: underline;
+}
+.menuItems:hover{
+    position: relative;
+    animation: upMove .4s;
+}
+@keyframes upMove{
+    from{
+        top : 0;
+        transition: .4s ease-in;
+    }
+    to{
+        top: -20px;
+        transition: .4s ease-out;
+    }
 }
 @keyframes shadowBlink{
     0%{
@@ -190,7 +207,7 @@ aside div{
     width: 100%;
     height: auto;
     padding: 10px;
-    border-left: 1px solid maroon !important;
+    
 }
 .contactForm p{
     padding: 10px;
